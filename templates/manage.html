@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Pantry Items</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="static/images/logo.png" alt="Pantry Tracker Logo">
+        <h1>Manage Pantry Items</h1>
+        <button onclick="window.location.href='index.html'">Back to Homepage</button>
+    </header>
+    <main>
+        <section id="manage">
+            <form id="pantry-form">
+                <input type="text" id="item-name" placeholder="Item Name" required>
+                <input type="number" id="item-quantity" placeholder="Quantity" required>
+                <button type="submit">Add/Update Item</button>
+            </form>
+            <ul id="pantry-list"></ul>
+        </section>
+    </main>
+    <script src="static/manage.js"></script>
+</body>
+</html>
